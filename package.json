@@ -1,0 +1,29 @@
+{
+  "name": "repo-tidy",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "tsc --noEmit",
+    "start": "tsx cmd/repo-tidy.ts"
+  },
+  "bin": {
+    "repo-tidy": "./dist/cmd/repo-tidy.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@openai/agents": "^0.1.6",
+    "openai": "^4.52.0",
+    "yargs-parser": "^21.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/yargs-parser": "^21.0.3",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
